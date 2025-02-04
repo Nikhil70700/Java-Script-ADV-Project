@@ -69,12 +69,13 @@ const getWeatherData = async () => {
 
     w_temperature.innerHTML = `${main.temp}&#176`;
     w_minTem.innerHTML = `Min: ${main.temp_min.toFixed()}&#176`;
-    w_maxTem.innerHTML = `Min: ${main.temp_max.toFixed()}&#176`;
+    w_maxTem.innerHTML = `Max: ${main.temp_max.toFixed()}&#176`;
 
     w_feelsLike.innerHTML = `${main.feels_like.toFixed(2)}&#176`;
     w_humidity.innerHTML = `${main.humidity}%`;
     w_wind.innerHTML = `${wind.speed} m/s`;
     w_pressure.innerHTML = `${main.pressure} hPa`;
+    // w_pressure.innerHTML=`${sys.sunrise}`
   } catch (error) {
     console.log(error);
   }
